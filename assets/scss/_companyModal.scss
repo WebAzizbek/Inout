@@ -1,0 +1,37 @@
+.comanyModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    max-width: 558px;
+    height: 424px;
+    border-radius: 24px;
+    padding: 40px;
+    background:var( --bgDark);
+    z-index: 1510;
+}
+
+.stars-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 54px;
+    right: 24px;
+}
+.media-stars{
+    display: none;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 754px) {
+    .stars-box{
+        display: none;
+    }
+    .media-stars{
+        display: flex;
+    }
+}

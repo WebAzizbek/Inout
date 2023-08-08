@@ -1,0 +1,101 @@
+////light ranglar
+:root {
+  --bgDark: #f5fbfd;
+  --bgLight: #fff;
+  --title: #2a3437;
+  --text: #4b5a5f;
+  --map-table-trush: #000;
+  --prColor: #456213;
+  --done: #0a97bc1a;
+  --employee-modal-bg: #f2f9fc;
+  --employee-star-bg: #e5edef;
+  --employee-close: #2a3437;
+  --cancelModal: #000;
+  --status: #fff;
+  --num: #4b5a5f;
+  --jobs-item: #fff;
+  --shadow: rgba(144, 173, 248, 0.25);
+  --shadow-service: rgba(181, 186, 197, 0.25);
+  --back: #eaf3f6;
+  --back-svg: invert(0);
+  --bg-modal: #fff;
+  --x-btn: #2a3437;
+  --modal-text: #89999e;
+  --input-border: #e5edef;
+  --bg-input: #f2f9fc;
+  --input-placeholder: #bdcbcf;
+  --caret: url('~/assets/images/svg/caret.svg');
+  --service: none;
+  --modal-border: #e5edef;
+  --modal-placeholder: #bdcbcf;
+  --number-shadow: 0 9px 18px 0 rgba(144, 173, 248, 0.25);
+  --map-btn: #eef4f8;
+  --mapModalEmpty: #e7f7e8;
+  --mapModalEmptyColor: #0aae1b;
+  --mapModalBusy: #fbf0f0;
+  --table-checkbox: #f5fbfd;
+  --table-btn-border: #e4ecef;
+  --dark-shadow: rgba(144, 173, 248, 0.25);
+  --back-btn-bac: #eaf3f6;
+  --back-btn-img: invert(1);
+}
+
+body.dark-mode {
+  --cancelModal: #ff6a6a;
+  --status: #5d3434;
+  --bgDark: #03161d;
+  --bgLight: #1d2e34;
+  --title: #fff;
+  --text: rgba(255, 255, 255, 0.8);
+  --num: #fff;
+  --jobs-item: #35454a;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --shadow-service: rgba(0, 0, 0, 0.25);
+  --back: #35454a;
+  --back-svg: invert(1);
+  --bg-modal: #1d2e34;
+  --x-btn: #ff6a6a;
+  --modal-text: #fff;
+  --input-border: rgba(255, 255, 255, 0.3);
+  --bg-input: #27343a;
+  --input-placeholder: rgba(255, 255, 255, 0.3);
+  --caret: url('~/assets/images/svg/caret-white.svg');
+  --service: 0 6px 12px 0 rgba(0, 0, 0, 0.25);
+  --modal-border: rgba(255, 255, 255, 0.3);
+  --modal-placeholder: rgba(255, 255, 255, 0.3);
+  --employee-modal-bg: #1d2e34;
+  --employee-star-bg: #35454a;
+  --employee-close: #ef3232;
+  --done: #0a97bc1a;
+  --map-table-trush: #ff6a6a;
+  --number-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.25);
+  --map-btn: #03161d;
+  --mapModalEmpty: #1b3b31;
+  --mapModalEmptyColor: #0df824;
+  --mapModalBusy: #5d3434;
+  --table-checkbox: #334248;
+  --table-btn-border: #47555a;
+  --dark-shadow: #1d2e34;
+  --back-btn-bac: #334248;
+  --back-btn-img: invert(0);
+}
+
+.modal-enter-active {
+  transition: all 0.3s linear;
+}
+
+.modal-leave-active {
+  transition: all 0.3s linear;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  transform: translateY(-60px);
+  opacity: 0;
+}
+
+.cancel {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}

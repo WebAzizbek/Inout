@@ -1,0 +1,29 @@
+<template>
+  <div class="cancel">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.2861 20.7142L20.7142 11.2861M11.2861 11.2861L20.7142 20.7142" stroke="" stroke-width="2"
+        stroke-linecap="round" />
+    </svg>
+  </div>
+</template>
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+@import "@/assets/scss/var";
+
+.cancel {
+  position: absolute;
+  z-index: 1511;
+  width: 32px;
+  height: 32px;
+  background: var(--bgLight);
+  border-radius: 50%;
+  cursor: pointer;
+  svg{
+    // transform: rotate(90deg);
+    stroke:var(--cancelModal);
+  }
+}
+</style>

@@ -1,0 +1,176 @@
+
+.employee-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    max-width: 558px;
+    height: 495px;
+    border-radius: 24px;
+    padding: 24px;
+    background:var( --bgDark);
+    z-index: 1510;
+}
+.employee-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.employee-header-title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--title);
+}
+.employee-header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 20px;
+    background: var(--employee-close-btn);
+    border-radius: 50%;
+}
+.employee-modal-user {
+    display: flex;
+    align-items:center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.employe-user-img{
+    display: flex;
+    width: 47px;
+    height: 47px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.employee-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+.employee-user-info h3{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: var(--title);
+}
+.employee-user-info span{
+    color: var(--title);
+}
+.employee-modal-stars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.employee-stars-desc {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--title);
+}
+.employee-stars{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+
+.rating {
+    cursor: pointer;
+    svg {
+        pointer-events: none;
+    }
+}
+.active-star-btn {
+    svg {
+        path {
+            fill: var(--prColor) !important;
+        }
+    }
+}
+
+
+.employee-stars button{
+    display: flex;
+    width: 45px;
+    height: 45px;
+}
+.employee-modal-yourMessage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.employee-youMessage-desc {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--title);
+}
+.employee-youMessage-textArea{
+    display: flex;
+    width: 100%;
+    height: 89px;
+    border-radius: 12px;
+    border: 1px solid #E5EDEF;
+    background: var(--employee-modal-bg);
+    color: var(--title);
+    padding: 12px;
+}
+.employee-modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 246px;
+    height: 47px;
+    background: var(--prColor);
+    color: #fff;
+    border-radius: 12px;
+    margin-top: 24px;
+    margin-left: auto;
+    transition: 0.1s linear;
+}
+.employee-modal-btn:hover{
+    background:var(--prColor);
+}
+
+@media(max-width:600px){
+    .employee-modal {
+        max-width: 500px;
+    }
+}
+@media(max-width:528px){
+    .employee-modal {
+        max-width: 450px;
+    }
+}
+@media(max-width:470px){
+    .employee-modal {
+        max-width: 400px;
+    }
+    .employee-modal-btn {
+        width: 100%;
+        max-width: 400px;
+
+    }
+}
+@media(max-width:430px){
+    .employee-modal {
+        max-width: 348px;
+    }
+}
+@media(max-width:430px){
+    .employee-modal {
+        max-width: 300px;
+    }
+}
+@media(max-width:280px){
+    .employee-modal {
+        max-width: 230px;
+    }
+}
